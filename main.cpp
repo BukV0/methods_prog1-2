@@ -8,6 +8,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <chrono>
 using namespace std;
 enum Favor{
 WEAK,
@@ -33,10 +34,19 @@ public:
       color = fl.color;
       fav = fl.fav;
       regions = fl.regions;
-      cout << "Kopirovnie worked";
+      //cout << "Kopirovnie worked";
   }
   string get_name(){
       return name;
+  }
+  string get_color(){
+      return color;
+  }
+  Favor get_favor(){
+      return fav;
+  }
+  string get_regions(){
+      return regions;
   }
   void print(){
       cout << "name " << name << endl;
@@ -231,19 +241,30 @@ void rt(Flower arr[],int size){
         arr[i].print();
     }
 }
-
+void file_out(Flower arr[], int size, string filename){
+    ofstream fout;
+    fout.open(filename);
+    for(int i = 0; i< size;i++){
+        fout << arr[i].get_name() << ' ' << arr[i].get_color() << ' ' << arr[i].get_favor() << ' ' << arr[i].get_regions() << endl;
+    }
+    fout.close();
+}
 int main() {
-    Flower *arr = new Flower[16];
-    Flower *arr1 = new Flower[16];
-    Flower *arr2 = new Flower[16];
-
+    using std::chrono::high_resolution_clock;
+    using std::chrono::duration_cast;
+    using std::chrono::duration;
+    using std::chrono::milliseconds;
+    Flower *arr = new Flower[30000];
+    Flower *arr1 = new Flower[30000];
+    Flower *arr2 = new Flower[30000];
+    int arr_size = 1000;
     //vib_sort(&arr);
     ifstream inFile;
     string name;
     string color;
     string fav;
     string region;
-    inFile.open("/Users/vladimr/CLionProjects/sortirovki/worldcities.csv");
+    inFile.open("/Users/vladimr/CLionProjects/sortirovki/30000.csv");
     if (inFile.is_open()) {
         cout << "File has been opened" << endl;
     }
@@ -260,7 +281,7 @@ int main() {
 //        cout << "name: " << name << endl;
 //        cout << "Color: " << color << endl;
 //        cout << "Region: " << region << endl;
-//        cout << "fav: " << stoi(fav) << endl;
+        //cout << "fav: " << stoi(fav) << endl;
         Favor f = static_cast<Favor>(stoi(fav));
         Flower temp(name,color,f,region);
         //temp.print();
@@ -270,9 +291,9 @@ int main() {
         k++;
     }
     cout << "arr before sort" <<endl;
-    for(int i = 0; i <k;i++){
-        arr[i].print();
-    }
+    file_out(arr,k,"/Users/vladimr/CLionProjects/sortirovki/first_arr_b.txt");
+    file_out(arr1,k,"/Users/vladimr/CLionProjects/sortirovki/second_arr_b.txt");
+    file_out(arr2,k,"/Users/vladimr/CLionProjects/sortirovki/third_arr_b.txt");
 //    cout << "arr1 before sort" <<endl;
 //    for(int i = 0; i <k;i++){
 //        arr1[i].print();
@@ -281,9 +302,22 @@ int main() {
 //    for(int i = 0; i <k;i++){
 //        arr2[i].print();
 //    }
+    auto t1 = high_resolution_clock::now();
     vib_sort(arr,k);
+    auto t2 = high_resolution_clock::now();
+    auto t3 = high_resolution_clock::now();
     quicksort(arr2,k);
+    auto t4 = high_resolution_clock::now();
+    auto t5 = high_resolution_clock::now();
     piramid_sort(arr1,k);
+    auto t6 = high_resolution_clock::now();
+    duration<double, std::milli> ms_double = t2 - t1;
+    duration<double, std::milli> ms_double1 = t4 - t3;
+    duration<double, std::milli> ms_double2 = t6 - t5;
+    file_out(arr,k,"/Users/vladimr/CLionProjects/sortirovki/first_arr_a.txt");
+    file_out(arr1,k,"/Users/vladimr/CLionProjects/sortirovki/second_arr_a.txt");
+    file_out(arr2,k,"/Users/vladimr/CLionProjects/sortirovki/third_arr_a.txt");
+    /*
     cout << "arr after sort" <<endl;
     for(int i = 0; i <k;i++){
         arr[i].print();
@@ -305,8 +339,14 @@ int main() {
     for(int i = 0; i <k;i++){
         arr2[i].print();
     }
-
-    cout << k;
+*/
+    cout << k << endl;
+    cout << "viborom: ";
+    cout << ms_double.count() << "ms\n";
+    cout << "bistraya: ";
+    cout << ms_double1.count() << "ms\n";
+    cout << "piramid: ";
+    cout << ms_double2.count() << "ms\n";
     inFile.close();
 
 
