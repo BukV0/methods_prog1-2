@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/sortirovki.dir/favor.cpp.o"
   "CMakeFiles/sortirovki.dir/main.cpp.o"
+  "CMakeFiles/sortirovki.dir/searches.cpp.o"
+  "CMakeFiles/sortirovki.dir/sort.cpp.o"
   "sortirovki"
   "sortirovki.pdb"
 )

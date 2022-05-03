@@ -80,7 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/vladimr/CLionProjects/sortirovki/favor.cpp">
+			<Option target="sortirovki"/>
+		</Unit>
+		<Unit filename="/Users/vladimr/CLionProjects/sortirovki/favor.h">
+			<Option target="sortirovki"/>
+		</Unit>
 		<Unit filename="/Users/vladimr/CLionProjects/sortirovki/main.cpp">
+			<Option target="sortirovki"/>
+		</Unit>
+		<Unit filename="/Users/vladimr/CLionProjects/sortirovki/searches.cpp">
+			<Option target="sortirovki"/>
+		</Unit>
+		<Unit filename="/Users/vladimr/CLionProjects/sortirovki/searches.h">
+			<Option target="sortirovki"/>
+		</Unit>
+		<Unit filename="/Users/vladimr/CLionProjects/sortirovki/sort.cpp">
+			<Option target="sortirovki"/>
+		</Unit>
+		<Unit filename="/Users/vladimr/CLionProjects/sortirovki/sort.h">
 			<Option target="sortirovki"/>
 		</Unit>
 		<Unit filename="/Users/vladimr/CLionProjects/sortirovki/CMakeLists.txt">

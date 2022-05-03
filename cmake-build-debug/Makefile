@@ -123,6 +123,33 @@ sortirovki/fast:
 	$(MAKE) -f CMakeFiles/sortirovki.dir/build.make CMakeFiles/sortirovki.dir/build
 .PHONY : sortirovki/fast
 
+favor.o: favor.cpp.o
+
+.PHONY : favor.o
+
+# target to build an object file
+favor.cpp.o:
+	$(MAKE) -f CMakeFiles/sortirovki.dir/build.make CMakeFiles/sortirovki.dir/favor.cpp.o
+.PHONY : favor.cpp.o
+
+favor.i: favor.cpp.i
+
+.PHONY : favor.i
+
+# target to preprocess a source file
+favor.cpp.i:
+	$(MAKE) -f CMakeFiles/sortirovki.dir/build.make CMakeFiles/sortirovki.dir/favor.cpp.i
+.PHONY : favor.cpp.i
+
+favor.s: favor.cpp.s
+
+.PHONY : favor.s
+
+# target to generate assembly for a file
+favor.cpp.s:
+	$(MAKE) -f CMakeFiles/sortirovki.dir/build.make CMakeFiles/sortirovki.dir/favor.cpp.s
+.PHONY : favor.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +177,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/sortirovki.dir/build.make CMakeFiles/sortirovki.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+searches.o: searches.cpp.o
+
+.PHONY : searches.o
+
+# target to build an object file
+searches.cpp.o:
+	$(MAKE) -f CMakeFiles/sortirovki.dir/build.make CMakeFiles/sortirovki.dir/searches.cpp.o
+.PHONY : searches.cpp.o
+
+searches.i: searches.cpp.i
+
+.PHONY : searches.i
+
+# target to preprocess a source file
+searches.cpp.i:
+	$(MAKE) -f CMakeFiles/sortirovki.dir/build.make CMakeFiles/sortirovki.dir/searches.cpp.i
+.PHONY : searches.cpp.i
+
+searches.s: searches.cpp.s
+
+.PHONY : searches.s
+
+# target to generate assembly for a file
+searches.cpp.s:
+	$(MAKE) -f CMakeFiles/sortirovki.dir/build.make CMakeFiles/sortirovki.dir/searches.cpp.s
+.PHONY : searches.cpp.s
+
+sort.o: sort.cpp.o
+
+.PHONY : sort.o
+
+# target to build an object file
+sort.cpp.o:
+	$(MAKE) -f CMakeFiles/sortirovki.dir/build.make CMakeFiles/sortirovki.dir/sort.cpp.o
+.PHONY : sort.cpp.o
+
+sort.i: sort.cpp.i
+
+.PHONY : sort.i
+
+# target to preprocess a source file
+sort.cpp.i:
+	$(MAKE) -f CMakeFiles/sortirovki.dir/build.make CMakeFiles/sortirovki.dir/sort.cpp.i
+.PHONY : sort.cpp.i
+
+sort.s: sort.cpp.s
+
+.PHONY : sort.s
+
+# target to generate assembly for a file
+sort.cpp.s:
+	$(MAKE) -f CMakeFiles/sortirovki.dir/build.make CMakeFiles/sortirovki.dir/sort.cpp.s
+.PHONY : sort.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... sortirovki"
+	@echo "... favor.o"
+	@echo "... favor.i"
+	@echo "... favor.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... searches.o"
+	@echo "... searches.i"
+	@echo "... searches.s"
+	@echo "... sort.o"
+	@echo "... sort.i"
+	@echo "... sort.s"
 .PHONY : help
 
 

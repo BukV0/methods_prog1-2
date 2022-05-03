@@ -6,13 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/Users/vladimr/CLionProjects/sortirovki/main.cpp
-iostream
--
-string
--
-fstream
--
-chrono
--
-

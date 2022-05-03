@@ -70,17 +70,62 @@ CMakeFiles/sortirovki.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sortirovki.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vladimr/CLionProjects/sortirovki/main.cpp -o CMakeFiles/sortirovki.dir/main.cpp.s
 
+CMakeFiles/sortirovki.dir/favor.cpp.o: CMakeFiles/sortirovki.dir/flags.make
+CMakeFiles/sortirovki.dir/favor.cpp.o: ../favor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vladimr/CLionProjects/sortirovki/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sortirovki.dir/favor.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sortirovki.dir/favor.cpp.o -c /Users/vladimr/CLionProjects/sortirovki/favor.cpp
+
+CMakeFiles/sortirovki.dir/favor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sortirovki.dir/favor.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vladimr/CLionProjects/sortirovki/favor.cpp > CMakeFiles/sortirovki.dir/favor.cpp.i
+
+CMakeFiles/sortirovki.dir/favor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sortirovki.dir/favor.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vladimr/CLionProjects/sortirovki/favor.cpp -o CMakeFiles/sortirovki.dir/favor.cpp.s
+
+CMakeFiles/sortirovki.dir/sort.cpp.o: CMakeFiles/sortirovki.dir/flags.make
+CMakeFiles/sortirovki.dir/sort.cpp.o: ../sort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vladimr/CLionProjects/sortirovki/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sortirovki.dir/sort.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sortirovki.dir/sort.cpp.o -c /Users/vladimr/CLionProjects/sortirovki/sort.cpp
+
+CMakeFiles/sortirovki.dir/sort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sortirovki.dir/sort.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vladimr/CLionProjects/sortirovki/sort.cpp > CMakeFiles/sortirovki.dir/sort.cpp.i
+
+CMakeFiles/sortirovki.dir/sort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sortirovki.dir/sort.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vladimr/CLionProjects/sortirovki/sort.cpp -o CMakeFiles/sortirovki.dir/sort.cpp.s
+
+CMakeFiles/sortirovki.dir/searches.cpp.o: CMakeFiles/sortirovki.dir/flags.make
+CMakeFiles/sortirovki.dir/searches.cpp.o: ../searches.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vladimr/CLionProjects/sortirovki/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sortirovki.dir/searches.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sortirovki.dir/searches.cpp.o -c /Users/vladimr/CLionProjects/sortirovki/searches.cpp
+
+CMakeFiles/sortirovki.dir/searches.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sortirovki.dir/searches.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vladimr/CLionProjects/sortirovki/searches.cpp > CMakeFiles/sortirovki.dir/searches.cpp.i
+
+CMakeFiles/sortirovki.dir/searches.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sortirovki.dir/searches.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vladimr/CLionProjects/sortirovki/searches.cpp -o CMakeFiles/sortirovki.dir/searches.cpp.s
+
 # Object files for target sortirovki
 sortirovki_OBJECTS = \
-"CMakeFiles/sortirovki.dir/main.cpp.o"
+"CMakeFiles/sortirovki.dir/main.cpp.o" \
+"CMakeFiles/sortirovki.dir/favor.cpp.o" \
+"CMakeFiles/sortirovki.dir/sort.cpp.o" \
+"CMakeFiles/sortirovki.dir/searches.cpp.o"
 
 # External object files for target sortirovki
 sortirovki_EXTERNAL_OBJECTS =
 
 sortirovki: CMakeFiles/sortirovki.dir/main.cpp.o
+sortirovki: CMakeFiles/sortirovki.dir/favor.cpp.o
+sortirovki: CMakeFiles/sortirovki.dir/sort.cpp.o
+sortirovki: CMakeFiles/sortirovki.dir/searches.cpp.o
 sortirovki: CMakeFiles/sortirovki.dir/build.make
 sortirovki: CMakeFiles/sortirovki.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vladimr/CLionProjects/sortirovki/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sortirovki"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vladimr/CLionProjects/sortirovki/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable sortirovki"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sortirovki.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

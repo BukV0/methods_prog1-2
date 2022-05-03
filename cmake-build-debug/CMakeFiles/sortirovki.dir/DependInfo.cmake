@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/vladimr/CLionProjects/sortirovki/favor.cpp" "/Users/vladimr/CLionProjects/sortirovki/cmake-build-debug/CMakeFiles/sortirovki.dir/favor.cpp.o"
   "/Users/vladimr/CLionProjects/sortirovki/main.cpp" "/Users/vladimr/CLionProjects/sortirovki/cmake-build-debug/CMakeFiles/sortirovki.dir/main.cpp.o"
+  "/Users/vladimr/CLionProjects/sortirovki/searches.cpp" "/Users/vladimr/CLionProjects/sortirovki/cmake-build-debug/CMakeFiles/sortirovki.dir/searches.cpp.o"
+  "/Users/vladimr/CLionProjects/sortirovki/sort.cpp" "/Users/vladimr/CLionProjects/sortirovki/cmake-build-debug/CMakeFiles/sortirovki.dir/sort.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
